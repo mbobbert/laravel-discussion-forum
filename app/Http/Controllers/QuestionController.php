@@ -18,8 +18,8 @@ class QuestionController extends Controller
      */
     public function show()
     {
+
        $view =view('questions/show');
        return $view;
-
     }
 }
