@@ -10,4 +10,12 @@ class QuestionController extends Controller
     {
        return 'This is the list of questions';
     }
+    /**
+     * shows a detail of questions
+     */
+    public function show()
+    {
+        return 'This is a detail of a question';
+
+    }
 }
