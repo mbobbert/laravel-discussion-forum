@@ -10,7 +10,8 @@ class QuestionController extends Controller
     public function index()
     {
         //create a new view object
-        $questions = DB::table('questions')->get();
+        //$questions = DB::table('questions')->get();
+        $questions = \App\Question::get();
 
         $view = view('questions/index' , ['questions' => [$questions]]);
 
