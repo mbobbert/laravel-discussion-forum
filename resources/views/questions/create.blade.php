@@ -11,17 +11,17 @@
     <div class="container">
     {!! Form::open(['action' => 'QuestionController@store']) !!}
 
-        <div clas="form-row">
+        <div class="form-row">
             <label>Title
             {{  Form::text('title') }}
             </label>
         </div>
-        <div clas="form-row">
+        <div class="form-row">
             <label>Text
             {{  Form::text('text')  }}
             </label>
         </div>
-        <div clas="form-row">
+        <div class="form-row">
         {{ Form::submit('Place a question!')}}
         </div>
 
