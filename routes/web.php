@@ -17,6 +17,9 @@ Route::get('/',function()
 //list of questions
 Route::get('/questions', 'QuestionController@index');
 //Route::get('/questions/{id}', 'QuestionController@show');
+Route::get('questions/create', 'QuestionController@create');
+
+Route::post('/questions/store', 'QuestionController@store');
 
 //detail of a question
-Route::get('/questions/{id?}', 'QuestionController@show')->name('show question');
+Route::get('/questions/{id}', 'QuestionController@show')->name('show question');

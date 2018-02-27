@@ -31,8 +31,9 @@
                     </div>
                 </div>
             </div>
-
         @endforeach
+        <br>
+        <a href="/questions/create">Place a question</a>
     </div>
 </section>
 @endsection
