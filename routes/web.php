@@ -20,6 +20,7 @@ Route::get('/questions', 'QuestionController@index');
 Route::get('questions/create', 'QuestionController@create');
 
 Route::post('/questions/store', 'QuestionController@store');
+Route::post('/answers/store', 'AnswerController@store');
 
 //detail of a question
 Route::get('/questions/{id}', 'QuestionController@show')->name('show question');

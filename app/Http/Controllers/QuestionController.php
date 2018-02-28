@@ -22,7 +22,7 @@ class QuestionController extends Controller
      */
     public function show($id)
     {
-        $question = DB::table('questions')->find($id);
+        $question = \App\Question::find($id);
             //create a new view object
         $view = view('questions/show' , ['question' => $question]);
         //return the view
@@ -41,7 +41,7 @@ class QuestionController extends Controller
        'text' => 'required',
        ]);
        $question = new \App\Question();
-       $question ->user_id = 0;
+       $question ->user_id = \Auth::id();
        $question ->title = $request ->get('title');
        $question ->text = $request ->get('text');
        $question ->save();
