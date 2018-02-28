@@ -23,3 +23,7 @@ Route::post('/questions/store', 'QuestionController@store');
 
 //detail of a question
 Route::get('/questions/{id}', 'QuestionController@show')->name('show question');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
